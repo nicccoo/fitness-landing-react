@@ -1,23 +1,25 @@
-import React from 'react';
-import { IoIosFitness } from 'react-icons/io'
-import { CardContainer, CardElement, CardImage, CardTitle, CardSubtitle } from './CardElement';
-import { cardData } from '../fixtures/card.json'
+import React from "react";
+import {
+  CardContainer,
+  CardElement,
+  CardImage,
+  CardTitle,
+  CardSubtitle,
+} from "./CardElement";
+import cardData from "../../fixtures/card.json";
 
-const Card = ({ children }) => {
-    return (
-      <>
-        <CardContainer>
-            <CardElement>
-                <CardImage>        
-                </CardImage>
-                <CardTitle>Hola</CardTitle>
-                <CardSubtitle>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, labore!</CardSubtitle>
-            </CardElement>
-        </CardContainer>
+const Card = () => {
+  return (
+    <CardContainer>
+      {cardData.map((item) => (
+        <CardElement key={item.id}>
+          <CardImage src={item.image} alt={item.alt} />
+          <CardTitle>{item.title}</CardTitle>
+          <CardSubtitle>{item.subtitle}</CardSubtitle>
+        </CardElement>
+      ))}
+    </CardContainer>
+  );
+};
 
-
-      </>
-    )
-}
-
-export default Card
+export default Card;

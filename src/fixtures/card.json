@@ -2,17 +2,20 @@
   {
     "id": 1,
     "image": "/images/musculacion.png",
+    "alt": "Instructor en musculacion",
     "title": "Musculación",
     "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, labore!"
   },
   {
     "id": 2,
     "image": "/images/preparacion.png",
+    "alt": "Preaparacion fisica y deportiva",
     "title": "Preparacion Deportiva",
     "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, labore!"
   },{
     "id": 3,
     "image": "/images/nutricion.png",
+    "alt": "Nutricion deportiva",
     "title": "Nutricion Deportiva",
     "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, labore!"
   }

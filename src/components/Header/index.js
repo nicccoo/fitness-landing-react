@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import  {GiHamburgerMenu} from 'react-icons/gi'
 import {
   Container,
   HeaderButton,
@@ -11,14 +13,19 @@ import {
 } from "./HeaderElements";
 
 const Header = () => {
+
   return (
     <>
-      <Container>
+      <Container> 
         <Navbar>
-          <NavLinks to="/" exact>
+          <Link to="/" exact>
             <Logo src="./images/logo.png" alt="Atila Fitness" />
-          </NavLinks>
+          </Link>
           <NavbarItems>
+            <GiHamburgerMenu 
+            size='40px'
+          
+            className="Mobile-menu" onClick={console.log('push')}/>
             <NavLinks activeClassName='active' to="/" exact>
               HOME
             </NavLinks>

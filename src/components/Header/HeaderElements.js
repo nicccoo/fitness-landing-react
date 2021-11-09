@@ -8,7 +8,16 @@ export const Navbar = styled.nav`
   width: 100%;
   height: 80px;
   margin: auto;
+
+  
+  @media (max-width: 768px) {
+   display: flex;
+   justify-content: space-between;
+   width: 100%; 
+  }
+
 `;
+
 
 export const Logo = styled.img`
   width: 250px;
@@ -19,6 +28,11 @@ export const Logo = styled.img`
 
   &:hover {
     transform: translateY(-2px);
+  }
+
+  @media (max-width: 768px) {
+    width: 180px;
+    height: 80px;
   }
 `;
 
@@ -45,6 +59,14 @@ export const Title = styled.h1`
   line-height: 60px;
   letter-spacing: 4px;
   font-style: italic;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+    width: 70%;
+    line-height: 30px;
+    margin-top: 20%;
+  }
+
 `;
 
 export const HeaderButton = styled.button`
@@ -61,6 +83,12 @@ export const HeaderButton = styled.button`
   &:hover {
     opacity: 0.8;
   }
+
+  @media (max-width: 768px) {
+   padding: 15px 20px;
+   font-size: 12px;
+   margin-top: 15px;
+  }
 `;
 
 export const NavLinks = styled(NavLink)`
@@ -75,16 +103,19 @@ export const NavLinks = styled(NavLink)`
   font-style: italic;
 
   &:not(:first-of-type) {
-    &:hover{
-    opacity: 0.5;
-    transition: 0.165s;
+    &:hover {
+      opacity: 0.5;
+      transition: 0.165s;
     }
   }
-  
+
   &.active {
     color: #a9db3f;
   }
-  
+
+  @media (max-width: 768px) {
+      display:none;
+  }
 `;
 
 export const Container = styled.div`
@@ -93,4 +124,12 @@ export const Container = styled.div`
   background: url(${`./images/header-image.jpg`});
   background-size: cover;
   background-repeat: no-repeat;
+  box-shadow: 0px 4px 5px -1px rgba(0, 0, 0, 0.74);
+  -webkit-box-shadow: 0px 4px 5px -1px rgba(0, 0, 0, 0.74);
+  -moz-box-shadow: 0px 4px 5px -1px rgba(0, 0, 0, 0.74);
+
+  @media (max-width: 768px) {
+    width: 100%;
+    background-size: cover;
+  }
 `;
