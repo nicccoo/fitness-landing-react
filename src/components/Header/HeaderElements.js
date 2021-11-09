@@ -19,9 +19,7 @@ export const Logo = styled.img`
 
   &:hover {
     transform: translateY(-2px);
-    
   }
-
 `;
 
 export const NavbarItems = styled.div`
@@ -56,7 +54,7 @@ export const HeaderButton = styled.button`
   border: 1px solid #333;
   background: #000;
   cursor: pointer;
-  color: #93c433;
+  color: var(--primary);
   transition: 0.365s;
   font-weight: bold;
 
@@ -74,16 +72,19 @@ export const NavLinks = styled(NavLink)`
   font-weight: 200;
   margin: 0 5px;
   letter-spacing: 0.5px;
+  font-style: italic;
 
+  &:not(:first-of-type) {
+    &:hover{
+    opacity: 0.5;
+    transition: 0.165s;
+    }
+  }
+  
   &.active {
     color: #a9db3f;
   }
-
-  &:hover {
-    opacity: 0.8;
-    transition: 0.365s;
-  }
-
+  
 `;
 
 export const Container = styled.div`
@@ -92,5 +93,4 @@ export const Container = styled.div`
   background: url(${`./images/header-image.jpg`});
   background-size: cover;
   background-repeat: no-repeat;
-
 `;

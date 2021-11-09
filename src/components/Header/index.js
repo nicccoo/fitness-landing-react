@@ -16,17 +16,17 @@ const Header = () => {
       <Container>
         <Navbar>
           <NavLinks to="/" exact>
-            <Logo src="./images/logo.png" alt="" />
+            <Logo src="./images/logo.png" alt="Atila Fitness" />
           </NavLinks>
           <NavbarItems>
             <NavLinks activeClassName='active' to="/" exact>
-              Home
+              HOME
             </NavLinks>
             <NavLinks activeClassName='active' to="/entrenamiento">
-              Entrenamiento
+              ENTRENAMIENTO
             </NavLinks>
             <NavLinks activeClassName='active' to="/contact">
-              Contacto
+              CONTACTO
             </NavLinks>
           </NavbarItems>
         </Navbar>
