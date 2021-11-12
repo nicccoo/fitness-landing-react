@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { useState } from "react";
+import { FaBars } from "react-icons/fa";
+import { IoMdClose } from 'react-icons/io'
+import { MobileMenu } from "./MobileNav.elements";
 
 const MobileNav = () => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+  const [isMobile, setIsMobile] = useState(false);
 
-export default MobileNav
+  return (
+
+    <MobileMenu>
+     { isMobile ? <FaBars/> : <IoMdClose />}
+    </MobileMenu>
+  );
+};
+
+export default MobileNav;

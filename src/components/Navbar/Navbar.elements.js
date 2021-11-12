@@ -8,18 +8,14 @@ export const NavbarContainer = styled.nav`
   width: 100%;
   height: 80px;
   margin: auto;
+ 
+  
 
-  @media (max-width: 768px) {
-    background: red;
-    position: absolute;
-    top: 0px;
-    left: 0;
-    width: 100%;
-    height: 90vh;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+  @media screen and (max-width: 768px) {
+   display: flex;
+   justify-content: space-between;
   }
+
 `;
 
 export const Logo = styled.img`
@@ -27,14 +23,12 @@ export const Logo = styled.img`
   color: white;
   height: 100px;
   transition-duration: 0.365s;
-  margin-top: 10px;
 
   &:hover {
     transform: translateY(-2px);
   }
 
-  @media (max-width: 768px) {
-    display: flex;
+  @media screen and (max-width: 768px) {
     width: 180px;
     height: 80px;
   }
@@ -45,6 +39,12 @@ export const NavbarItems = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-top: 10px;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
+
 `;
 
 export const NavLinks = styled(NavLink)`

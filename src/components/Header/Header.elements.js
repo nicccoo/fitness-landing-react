@@ -47,7 +47,6 @@ export const HeaderButton = styled.button`
   }
 `;
 
-
 export const Container = styled.div`
   width: 100%;
   height: 100vh;
@@ -58,8 +57,9 @@ export const Container = styled.div`
   -webkit-box-shadow: 0px 4px 5px -1px rgba(0, 0, 0, 0.74);
   -moz-box-shadow: 0px 4px 5px -1px rgba(0, 0, 0, 0.74);
 
-  @media (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     width: 100%;
+    height: 100vh;
     background-size: cover;
   }
 `;
