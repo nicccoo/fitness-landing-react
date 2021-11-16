@@ -9,14 +9,14 @@
   {
     "id": 2,
     "image": "/images/preparacion.png",
-    "alt": "Preaparacion fisica y deportiva",
-    "title": "Preparacion Deportiva",
+    "alt": "Preaparación física y deportiva",
+    "title": "Preparación Deportiva",
     "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, labore!"
   },{
     "id": 3,
     "image": "/images/nutricion.png",
-    "alt": "Nutricion deportiva",
-    "title": "Nutricion Deportiva",
+    "alt": "Nutrición deportiva",
+    "title": "Nutrición Deportiva",
     "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, labore!"
   }
 ]

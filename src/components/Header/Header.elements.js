@@ -35,6 +35,7 @@ export const HeaderButton = styled.button`
   color: var(--primary);
   transition: 0.365s;
   font-weight: bold;
+  z-index: 0;
 
   &:hover {
     opacity: 0.8;
@@ -44,6 +45,7 @@ export const HeaderButton = styled.button`
     padding: 15px 20px;
     font-size: 12px;
     margin-top: 15px;
+    z-index: 1;
   }
 `;
 

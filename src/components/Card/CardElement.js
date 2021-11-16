@@ -2,32 +2,41 @@ import styled from "styled-components/macro";
 
 export const CardContainer = styled.div`
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   width: 100%;
-  height: auto;
+  height: 50vh;
+  background-color: white;
 `;
 
 export const CardElement = styled.div`
   display: flex;
-  border: 1px solid black;
   flex-direction: column;
-  width: 350px;
-  height: 250px;
-  margin: auto;
+  align-items: center;
+  width: 380px;
+  height: 300px;
+  margin-top: -50vh;
+  background-color: white;
+  border-radius: 5px;
 `;
 
 export const CardImage = styled.img`
-  width: 50px;
-  height: 50px;
+  width: 65px;
+  height: 60px;
   margin: auto;
-  color: black;
 `;
 
-export const CardTitle = styled.h3`
-  font-size: 20px;
+export const CardTitle = styled.h1`
+  font-size: 22px;
   margin: auto;
+  font-weight: 200;
+  font-style: italic;
+  
 `;
 
 export const CardSubtitle = styled.p`
-  font-size: 10px;
+  font-size: 18px;
+  text-align: center;
   margin: auto;
+  font-weight: 200;
 `;

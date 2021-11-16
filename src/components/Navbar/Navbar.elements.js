@@ -8,14 +8,14 @@ export const NavbarContainer = styled.nav`
   width: 100%;
   height: 80px;
   margin: auto;
-  background: ${({bg}) => bg ? "var(--primary)" : "" };
-  transition: 0.565s;
+  transition: 0.75s;
   position: sticky;
   top: 0;
   
   @media screen and (max-width: 768px) {
     display: flex;
     justify-content: space-between;
+    background: ${({bg}) => bg ? "var(--primary)" : "" };
   }
 `;
 
