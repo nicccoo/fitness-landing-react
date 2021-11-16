@@ -8,14 +8,15 @@ export const NavbarContainer = styled.nav`
   width: 100%;
   height: 80px;
   margin: auto;
- 
+  background: ${({bg}) => bg ? "var(--primary)" : "" };
+  transition: 0.565s;
+  position: sticky;
+  top: 0;
   
-
   @media screen and (max-width: 768px) {
-   display: flex;
-   justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
   }
-
 `;
 
 export const Logo = styled.img`
@@ -41,10 +42,19 @@ export const NavbarItems = styled.div`
   margin-top: 10px;
 
   @media screen and (max-width: 768px) {
-    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    left: ${({show}) => show ? '0' : '-100%'};
+    justify-content: space-evenly;
+    height: 90vh;
+    opacity: 0.962;
+    background: #000;
+    align-items: center;
+    transition: 0.365s;
   }
-
-
 `;
 
 export const NavLinks = styled(NavLink)`
@@ -68,5 +78,21 @@ export const NavLinks = styled(NavLink)`
   &.active {
     color: #a9db3f;
   }
+`;
 
+export const MobileIcon = styled.div`
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    align-items: center;
+    padding: 20px;
+
+    svg {
+      fill: #000;
+      width: 35px;
+      height: 35px;
+
+    }
+  }
 `;

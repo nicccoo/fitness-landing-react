@@ -4,12 +4,13 @@ import {
   CardElement,
   CardImage,
   CardTitle,
-  CardSubtitle,
+  CardSubtitle
 } from "./CardElement";
 import cardData from "../../fixtures/card.json";
 
 const Card = () => {
   return (
+    
     <CardContainer>
       {cardData.map((item) => (
         <CardElement key={item.id}>

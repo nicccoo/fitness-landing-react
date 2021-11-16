@@ -1,9 +1,9 @@
 import React from 'react'
-import Card from '../components/Card'
+import { EntrenamientoContainer } from '../containers'
 
 const Entrenamiento = () => {
     return (
-        <Card/>
+        <EntrenamientoContainer />
     )
 }
 

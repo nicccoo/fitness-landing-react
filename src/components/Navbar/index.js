@@ -1,21 +1,26 @@
-import React from "react";
-import { MobileMenu } from "../MobileNav/MobileNav.elements";
+import React, { useState } from "react";
+import { FaBars } from "react-icons/fa";
+import { AiOutlineClose } from 'react-icons/ai'
 import {
   NavbarContainer,
   NavbarItems,
   NavLinks,
   Logo,
+  MobileIcon,
 } from "./Navbar.elements";
 
 const Navbar = () => {
+  const [isMobile, setIsMobile] = useState(false);
   return (
     <>
-      <NavbarContainer>
+      <NavbarContainer bg={isMobile}>
         <NavLinks to="/" exact>
           <Logo src="./images/logo.png" alt="Atila Fitness" />
         </NavLinks>
-        <MobileMenu />
-        <NavbarItems>
+        <MobileIcon onClick={() => setIsMobile(!isMobile)}>
+          {isMobile ? <AiOutlineClose /> : <FaBars /> }
+        </MobileIcon>
+        <NavbarItems show={isMobile} onClick={() => setIsMobile(false)}>
           <NavLinks activeClassName="active" to="/" exact>
             HOME
           </NavLinks>
