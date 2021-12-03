@@ -1,10 +1,14 @@
-import React from 'react'
-import { EntrenamientoContainer } from '../containers'
+import React from "react";
+import Card from "../components/Card";
+import Jumbotron from "../components/Jumbotron";
 
 const Entrenamiento = () => {
-    return (
-        <EntrenamientoContainer />
-    )
-}
+  return (
+    <>
+      <Card />
+      <Jumbotron />
+    </>
+  );
+};
 
-export default Entrenamiento
+export default Entrenamiento;

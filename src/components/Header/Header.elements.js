@@ -36,16 +36,14 @@ export const HeaderButton = styled.button`
   transition: 0.365s;
   font-weight: bold;
   z-index: 0;
+  margin: 30px;
 
   &:hover {
     opacity: 0.8;
   }
 
   @media (max-width: 768px) {
-    padding: 15px 20px;
-    font-size: 12px;
-    margin-top: 15px;
-    z-index: 1;
+    display: none;
   }
 `;
 
@@ -55,9 +53,8 @@ export const Container = styled.div`
   background: url(${`./images/header-image.jpg`});
   background-size: cover;
   background-repeat: no-repeat;
-  box-shadow: 0px 4px 5px -1px rgba(0, 0, 0, 0.74);
-  -webkit-box-shadow: 0px 4px 5px -1px rgba(0, 0, 0, 0.74);
-  -moz-box-shadow: 0px 4px 5px -1px rgba(0, 0, 0, 0.74);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
 
   @media screen and (max-width: 768px) {
     width: 100%;

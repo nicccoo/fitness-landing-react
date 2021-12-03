@@ -1,6 +1,5 @@
 import React from "react";
-import "./App.css";
-import Home from './pages/home';
+import Home from "./pages/home";
 import Entrenamiento from "./pages/entrenamiento";
 import { BrowserRouter as Router } from "react-router-dom";
 import GlobalStyle from "./GlobalStyles";
@@ -8,8 +7,8 @@ import GlobalStyle from "./GlobalStyles";
 function App() {
   return (
     <>
+      <GlobalStyle />
       <Router>
-        <GlobalStyle/>
         <Home />
         <Entrenamiento />
       </Router>

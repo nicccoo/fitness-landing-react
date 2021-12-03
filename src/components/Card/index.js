@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  Container,
   CardContainer,
   CardElement,
   CardImage,
@@ -21,6 +20,7 @@ const Card = () => {
         ))}
       </CardContainer>
   );
+
 };
 
 export default Card;
