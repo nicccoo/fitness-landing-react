@@ -53,8 +53,6 @@ export const Container = styled.div`
   background: url(${`./images/header-image.jpg`});
   background-size: cover;
   background-repeat: no-repeat;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-
 
   @media screen and (max-width: 768px) {
     width: 100%;

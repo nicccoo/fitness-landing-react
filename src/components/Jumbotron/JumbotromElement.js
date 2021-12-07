@@ -4,6 +4,7 @@ export const Container = styled.div`
   display: flex;
   width: 100%;
   flex-direction: column;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
 
   @media (max-width: 768px) { 
      margin-top: 10vh; 
@@ -17,11 +18,11 @@ export const Jumbo = styled.div`
   width: 100%;
   height: 40%;
   padding: 15px;
-  align-items: center; ;
+  align-items: center;
 
-  &:last-of-type {
-      margin: 100px 0;
-  }
+  
+      margin: 50px 0;
+  
 
   @media (max-width: 768px) {
     display: flex;

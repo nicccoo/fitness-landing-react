@@ -12,7 +12,7 @@
     "id": "2",
     "title": "Lorem ipsum dolor sit, amet consectetur",
     "subTitle": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis rerum tempore voluptas quas, animi id est fugiat magnam corrupti impedit eligendi debitis. Quo, cumque harum voluptatum iusto deserunt qui id eveniet, natus esse vitae perferendis. Et quae asperiores voluptates vero facilis esse dolorum, error facere explicabo maiores possimus suscipit consectetur!",
-    "image": "/images/jumbo.jpg",
+    "image": "/images/jumbo2.jpg",
     "alt": "Train",
     "direction": "row-reverse",
     "directionText": "flex-end"
