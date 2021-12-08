@@ -13,7 +13,8 @@ const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        background-image: linear-gradient(to right top, #2c394b, #273342, #232d3a, #1e2732, #1a212a);
+        background: #F8F8F8;
+        max-width: 100%;
     }
 
     h1,h2,h3,h4,h5 {

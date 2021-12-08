@@ -8,14 +8,14 @@ import {
   Logo,
   MobileIcon,
 } from "./Navbar.elements";
-import * as ROUTES from '../../constants/routes'
+import * as ROUTES from "../../constants/routes";
 
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   const toggleIsMobile = () => {
     setIsMobile(!isMobile);
-  }
+  };
 
   return (
     <>
@@ -26,7 +26,7 @@ const Navbar = () => {
         <MobileIcon onClick={toggleIsMobile}>
           {isMobile ? <AiOutlineClose /> : <FaBars />}
         </MobileIcon>
-        <NavbarItems show={isMobile} onClick={toggleIsMobile} >
+        <NavbarItems show={isMobile} onClick={toggleIsMobile}>
           <NavLinks activeClassName="active" to={ROUTES.HOME} exact>
             HOME
           </NavLinks>

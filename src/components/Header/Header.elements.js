@@ -43,7 +43,8 @@ export const HeaderButton = styled.button`
   }
 
   @media (max-width: 768px) {
-    display: none;
+    padding: 15px 15px;
+    font-size: 12px;
   }
 `;
 

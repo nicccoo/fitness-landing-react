@@ -6,6 +6,7 @@ import {
   JumboImage,
   JumboText,
   JumboTextInner,
+  JumboPreTitle,
   JumboTitle,
   JumboSubTitle,
 } from "./JumbotromElement";
@@ -21,6 +22,7 @@ const Jumbotron = () => {
           </Inner>
           <JumboText>
             <JumboTextInner directionText={item.directionText} >
+              <JumboPreTitle>Atila Fit</JumboPreTitle>
               <JumboTitle >{item.title}</JumboTitle>
               <JumboSubTitle>{item.subTitle}</JumboSubTitle>
             </JumboTextInner>

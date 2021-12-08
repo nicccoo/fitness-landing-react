@@ -2,12 +2,11 @@ import styled from "styled-components/macro";
 
 export const CardContainer = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  justify-content:space-evenly;
   align-items: center;
-  width: 100%;
+  width: 70%;
+  margin-left: 15%;
   height: 50vh;
-  margin-top: -26vh;
-
   opacity: 0.9;
 
   @media (max-width: 768px) {
@@ -15,7 +14,9 @@ export const CardContainer = styled.div`
     justify-content: center;
     align-items: center;
     height: 800px;
-    width: 200px;
+    width: 100%;
+    margin-top: 10vh;
+    margin-left: 0;
   }
 `;
 
@@ -23,21 +24,15 @@ export const CardElement = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 380px;
-  height: 300px;
-  background-image: linear-gradient(
-    to bottom,
-    #a9db3f,
-    #96c03e,
-    #83a53c,
-    #718b39,
-    #5f7236
-  );
-  border-radius: 8px;
+  width: 360px;
+  height: 280px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+
+  background: var(--primary);
 
   @media (max-width: 768px) {
     margin: 10px auto;
+    width: 100%;
   }
 `;
 
@@ -57,7 +52,6 @@ export const CardTitle = styled.h1`
   font-weight: 200;
   font-style: italic;
   text-transform: uppercase;
-  color: #000;
 
   @media (max-width: 768px) {
     font-size: 20px;
@@ -69,6 +63,6 @@ export const CardSubtitle = styled.p`
   text-align: center;
   margin: auto;
   padding: 0 10px;
-  color: #000;
+  color: #777777;
   font-weight: 200;
 `;

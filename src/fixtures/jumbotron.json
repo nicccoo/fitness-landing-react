@@ -15,7 +15,7 @@
     "image": "/images/jumbo2.jpg",
     "alt": "Train",
     "direction": "row-reverse",
-    "directionText": "flex-end"
+    "directionText": "flex-start"
   }
 ]
 

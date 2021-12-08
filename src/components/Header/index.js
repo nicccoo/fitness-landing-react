@@ -15,8 +15,10 @@ const Header = () => {
           <HeaderButton>COMIENZA AHORA</HeaderButton>
         </Text>
       </Container>
+      
     </>
   );
 };
+
 
 export default Header;
