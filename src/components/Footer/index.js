@@ -1,23 +1,19 @@
 import React from "react";
+import { IconContext } from "react-icons";
 import {
   FooterContainer,
   FooterInfo,
   FooterTitle,
   FooterText,
   FooterContacto,
-  FooterTelefono,
-  FooterHorarios,
-  FooterRedes,
-  FooterContactoHorarios,
-  FooterContactoTitle,
 } from "./FooterElement";
 import footerData from "../../fixtures/footer.json";
-import { FaFacebookF, FaWhatsapp } from "react-icons/fa";
-import {HiOutlineMail } from 'react-icons/hi'
+import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <FooterContainer>
+    <FooterContainer id="footer">
       {footerData.map((item) => (
         <FooterInfo key={item.id}>
           <FooterTitle>{item.title}</FooterTitle>
@@ -25,19 +21,26 @@ const Footer = () => {
         </FooterInfo>
       ))}
       <FooterContacto>
-        <FooterContactoTitle>Telefono</FooterContactoTitle>
-        <FooterTelefono>+598 2712 3045</FooterTelefono>
-        <FooterContactoHorarios>Horarios</FooterContactoHorarios>
-        <FooterHorarios>
-          Lunes-Viernes <br />
-          9:00-13:00 y 15:00-19:00
-        </FooterHorarios>
+        <IconContext.Provider
+          value={{ style: { color: "var(--primary)", fontSize: "50px" } }}
+        >
+          <Link
+            to={{
+              pathname:
+                "https://wa.me/5493364594483?text=¡Hola,%20quiero%20empezar%20a%20entrenar!",
+            }}
+            target="_blank"
+          >
+            <FaWhatsapp />
+          </Link>
+          <Link
+            to={{ pathname: "https://instagram.com/atila_fit" }}
+            target="_blank"
+          >
+            <FaInstagram />
+          </Link>
+        </IconContext.Provider>
       </FooterContacto>
-      <FooterRedes>
-        <FaWhatsapp />
-        <FaFacebookF />
-        <HiOutlineMail />
-      </FooterRedes>
     </FooterContainer>
   );
 };

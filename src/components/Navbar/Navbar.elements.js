@@ -1,5 +1,5 @@
 import styled from "styled-components/macro";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 
 export const NavbarContainer = styled.nav`
   display: flex;
@@ -9,8 +9,6 @@ export const NavbarContainer = styled.nav`
   height: 80px;
   margin: auto;
   transition: 0.75s;
-  position: sticky;
-  top: 0;
   
   @media screen and (max-width: 768px) {
     display: flex;
@@ -61,7 +59,7 @@ export const NavbarItems = styled.div`
   }
 `;
 
-export const NavLinks = styled(NavLink)`
+export const NavLinks = styled(Link)`
   font-size: 16px;
   padding: 15px;
   color: white;
@@ -71,16 +69,13 @@ export const NavLinks = styled(NavLink)`
   margin: 0 5px;
   letter-spacing: 0.5px;
   font-style: italic;
+  cursor: pointer;
 
-  &:not(:nth-child(1)) {
+  &:not(:nth-child(0)) {
     &:hover {
-      opacity: 0.5;
+      color: var(--primary);
       transition: 0.165s;
     }
-  }
-
-  &.active {
-    color: #a9db3f;
   }
 
   @media screen and (max-width: 768px) { 

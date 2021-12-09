@@ -22,7 +22,8 @@ export const Jumbo = styled.div`
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
-    padding: 0;
+    height: 85vh;
+    padding: 15px 0;
   }
 `;
 
@@ -43,6 +44,7 @@ export const JumboImage = styled.img`
   width: 100%;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
   object-fit: cover;
+
 `;
 
 export const Inner = styled.div`
@@ -50,7 +52,7 @@ export const Inner = styled.div`
   max-width: 50%;
 
   @media (max-width: 768px) {
-    width: 90%;
+    width: 100%;
   }
 `;
 

@@ -10,7 +10,7 @@ import cardData from "../../fixtures/card.json";
 
 const Card = () => {
   return (
-      <CardContainer>
+      <CardContainer id='entrenamiento'>
         {cardData.map((item) => (
           <CardElement key={item.id}>
             <CardImage src={item.image} alt={item.alt} />
