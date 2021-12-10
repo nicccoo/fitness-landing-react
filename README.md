@@ -1,6 +1,6 @@
 # Landing Page.
 
-<h4>Landing page hecha en react, estilizada con styled-components y animaciones con react-scroll</h4>
+<h4>Landing page hecha en react, estilizada con styled-components y animaciones con react-scroll. Desplegado en Vercel</h4>
 
 
 # Getting Started with Create React App
