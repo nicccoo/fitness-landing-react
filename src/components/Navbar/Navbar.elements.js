@@ -14,7 +14,7 @@ export const NavbarContainer = styled.nav`
     display: flex;
     justify-content: space-between;
     background: ${({bg}) => bg ? "var(--primary)" : "" };
-  z-index: 999;
+    z-index: 999;
 
   }
 `;
@@ -66,11 +66,10 @@ export const NavLinks = styled(Link)`
   text-decoration: none;
   transition: 0.365s;
   font-weight: 200;
-  margin: 0 5px;
   letter-spacing: 0.5px;
   font-style: italic;
   cursor: pointer;
-
+  
   &:not(:nth-child(0)) {
     &:hover {
       color: var(--primary);
