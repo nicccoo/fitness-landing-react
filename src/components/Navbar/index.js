@@ -19,13 +19,7 @@ const Navbar = () => {
   return (
     <>
       <NavbarContainer bg={isMobile}>
-        <NavLinks         
-          to="home"
-          spy={true}
-          smooth={true}
-          hashSpy={true}
-          exact
-        >
+        <NavLinks to="home" spy={true} smooth={true} hashSpy={true} exact>
           <Logo src="./images/logo.png" alt="Atila Fitness" />
         </NavLinks>
         <MobileIcon onClick={toggleIsMobile}>
@@ -33,6 +27,7 @@ const Navbar = () => {
         </MobileIcon>
         <NavbarItems show={isMobile} onClick={toggleIsMobile}>
           <NavLinks
+            onClick={toggleIsMobile}
             to="home"
             spy={true}
             smooth={true}
@@ -42,6 +37,7 @@ const Navbar = () => {
             HOME
           </NavLinks>
           <NavLinks
+            onClick={toggleIsMobile}
             to="entrenamiento"
             spy={true}
             smooth={true}
@@ -50,6 +46,7 @@ const Navbar = () => {
             ENTRENAMIENTO
           </NavLinks>
           <NavLinks
+            onClick={toggleIsMobile}
             to="footer"
             spy={true}
             smooth={true}

@@ -4,20 +4,20 @@
     "image": "/images/musculacion.png",
     "alt": "Instructor en musculacion",
     "title": "Musculación",
-    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, labore!"
+    "subtitle": "Desarrolla tu fisico y encuentra un equilibrio corporal"
   },
   {
     "id": 2,
     "image": "/images/preparacion.png",
     "alt": "Preaparación física y deportiva",
     "title": "Preparación Deportiva",
-    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, labore!"
+    "subtitle": "Encuentra un rendimiento deportivo optimo"
   },{
     "id": 3,
     "image": "/images/nutricion.png",
     "alt": "Nutrición deportiva",
     "title": "Nutrición Deportiva",
-    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, labore!"
+    "subtitle": "Aprende a comer y beber alimentos según la ocasión"
   }
 ]
 

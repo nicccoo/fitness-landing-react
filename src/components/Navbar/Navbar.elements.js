@@ -9,13 +9,12 @@ export const NavbarContainer = styled.nav`
   height: 80px;
   margin: auto;
   transition: 0.75s;
-  
+
   @media screen and (max-width: 768px) {
     display: flex;
     justify-content: space-between;
-    background: ${({bg}) => bg ? "var(--primary)" : "" };
+    background: ${({ bg }) => (bg ? "var(--primary)" : "")};
     z-index: 999;
-
   }
 `;
 
@@ -48,14 +47,13 @@ export const NavbarItems = styled.div`
     left: 0;
     width: 100%;
     flex-direction: column;
-    left: ${({show}) => show ? '0' : '-100%'};
+    left: ${({ show }) => (show ? "0" : "-100%")};
     justify-content: space-evenly;
     height: 90vh;
     opacity: 0.962;
     background: #000;
     align-items: center;
     transition: 0.365s;
-
   }
 `;
 
@@ -69,7 +67,7 @@ export const NavLinks = styled(Link)`
   letter-spacing: 0.5px;
   font-style: italic;
   cursor: pointer;
-  
+
   &:not(:nth-child(0)) {
     &:hover {
       color: var(--primary);
@@ -77,12 +75,9 @@ export const NavLinks = styled(Link)`
     }
   }
 
-  @media screen and (max-width: 768px) { 
+  @media screen and (max-width: 768px) {
     padding: 24px;
-
   }
-
-
 `;
 
 export const MobileIcon = styled.div`
@@ -97,7 +92,6 @@ export const MobileIcon = styled.div`
       fill: #000;
       width: 35px;
       height: 35px;
-
     }
   }
 `;
